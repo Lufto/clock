@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Micro 5", sans-serif;
+}
+
+body{
+	background-color: #2B2B2B;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	.wrapper{
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.hours, .mines, .time{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.mines-item{
+				width: 35px;
+			}
+		}
+		.hours{
+			top: 40%;
+			gap:7px
+		}
+		.mines{
+			bottom: 41%;
+			gap:3px;
+		}
+		.time{
+			font-size: 80px;
+			color: #0EFF42;
+			font-weight: 900;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	main{
+		flex-direction: column;
+		.wrapper{
+			margin-top: 30px;
+		}
+	}
+}
